@@ -1,4 +1,6 @@
 <?php
+# Database Settings
+
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
@@ -12,6 +14,7 @@ if (!$connection) {
     die('Database connection failed: ' . mysqli_connect_error() . ' (' . mysqli_connect_errno() . ')');
 }
 
+# Ensures the colours table exists
 $colours_table = "
     CREATE TABLE IF NOT EXISTS colours (
         ID INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -20,6 +23,7 @@ $colours_table = "
     ) AUTO_INCREMENT = 1000000;
 ";
 
+# Ensures the users table exists
 $users_table = "
     CREATE TABLE IF NOT EXISTS users (
         ID INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -28,6 +32,7 @@ $users_table = "
     ) AUTO_INCREMENT = 1000000;
 ";
 
+# Ensures the games table exists
 $games_table = "
     CREATE TABLE IF NOT EXISTS games (
         ID INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,

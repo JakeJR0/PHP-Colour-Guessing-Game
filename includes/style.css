@@ -1,0 +1,126 @@
+:root {
+    --game-text-color: #fff;
+    --game-background-color: #fff;
+}
+
+body nav{
+    margin-bottom: 30px;
+}
+
+#leaderboard {
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#leaderboard * {
+    text-align: center;
+    cursor: default;
+}
+
+#game-wrapper {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#game-wrapper section {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#game-wrapper section[id='colours'] {
+    margin-top: 4rem;
+}
+
+#game-form {
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#game-answer {
+    width: 30%;
+    margin: auto;
+    margin-top: 1.5rem;
+    background-color: var(--game-text-color);
+    border-radius: 1.5rem;
+    padding: 10px;
+}
+
+#game-answer h2 {
+    margin: 0;
+    background-color: var(--game-background-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#game-answer p {
+    margin-top: 1rem;
+}
+
+#game-answer-form input[type="submit"] {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+#system-form {
+    width: 30%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+#system-form div[class="form-group"] {
+    margin-bottom: 1rem;
+}
+
+.system-form-input-error {
+    animation-name: system-form-input-shake;
+    animation-duration: 0.25s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+#system-form button[type="button"] {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+#game-stats {
+    margin-top: 8rem;
+}
+
+#game-stats p {
+    margin-top: 1.5rem;
+}
+
+@keyframes system-form-input-shake {
+    0% {
+        border-color: red;
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        border-color: red;
+        transform: translateX(0);
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #leaderboard {
+        width: 100%;
+    }
+
+    .system-form {
+        width: 90%;
+    }
+}
+

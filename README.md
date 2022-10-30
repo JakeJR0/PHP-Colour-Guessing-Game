@@ -33,7 +33,7 @@ VALUES
 ('orange', '#FFA500'),
 ('purple', '#800080'),
 ('brown', '#A52A2A'),
-('black', '#000000')
+('black', '#000000');
 ```
 
 ### Playing the Game

@@ -1,8 +1,14 @@
 # Colour Guessing Game
 
-## About
+## Introduction
 
 This is a recreation of the game that I was tasked to make in python during my T-Level course, I have descided to recreate it in PHP as a way to learn the language.
+
+## Dependencies
+
+This game requires the following dependencies to be installed:
+
+- [WampServer](https://www.wampserver.com/en/) or [XAMPP](https://www.apachefriends.org/index.html)
 
 ## Project Requirements
 

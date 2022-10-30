@@ -10,6 +10,36 @@ This game requires the following dependencies to be installed:
 
 - [WampServer](https://www.wampserver.com/en/) or [XAMPP](https://www.apachefriends.org/index.html)
 
+## Usage
+
+### Installation
+
+- Clone Repository into your `www` or `htdocs` folder
+- Start WampServer or XAMPP
+
+### Database Setup
+
+- Open phpMyAdmin
+- Create a new database called `colour_game`
+- Runs the following SQL command:
+
+```sql
+INSERT INTO colours(colour_name, colour_hex) 
+VALUES
+('red', '#FF0000'),
+('green', '#00FF00'),
+('blue', '#0000FF'),
+('pink', '#FF00FF'),
+('orange', '#FFA500'),
+('purple', '#800080'),
+('brown', '#A52A2A'),
+('black', '#000000')
+```
+
+### Playing the Game
+
+- Go to [localhost/PHP-Colour-Guessing-Game/index.php](http://localhost/PHP-Colour-Guessing-Game/index.php)
+
 ## Project Requirements
 
 - The game must provide a random colour for both the text and background, the user must then guess the colour of the text.
